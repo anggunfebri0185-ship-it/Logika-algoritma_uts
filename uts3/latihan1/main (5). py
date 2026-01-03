@@ -1,7 +1,0 @@
-from utils import format_rupiah
-
-# Input angka dari penggunab
-angka = int(input("Masukkan angka: "))
-
-# Menampilkan hasil dalam format Rupiah
-print("Hasil:", format_rupiah(angka))

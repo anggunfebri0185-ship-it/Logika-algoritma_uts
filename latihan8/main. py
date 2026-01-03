@@ -1,0 +1,24 @@
+from utils import parse_angka, hitung_total
+
+# Input jumlah orang
+jumlah_orang = int(input("Ada berapa orang: "))
+
+# Input harga per orang (dipisahkan koma)
+data_harga1 = input("Harga1: ")
+data_harga2 = input("Harga2: ")
+
+# Proses data
+harga1 = parse_angka(data_harga1)
+harga2 = parse_angka(data_harga2)
+
+# Hitung total
+total1 = hitung_total(harga1)
+total2 = hitung_total(harga2)
+
+# Output sesuai format
+print("\n=== HASIL ===")
+print("Ada berapa orang:", jumlah_orang)
+print("Harga1:", ", ".join(map(str, harga1)))
+print("Harga2:", ", ".join(map(str, harga2)))
+print("Total1:", total1)
+print("Total2:", total2)

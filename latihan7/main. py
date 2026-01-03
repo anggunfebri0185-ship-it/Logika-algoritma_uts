@@ -1,0 +1,8 @@
+from utils import konversi_angka
+
+# Contoh angka
+angka = 5.548363
+
+# Menampilkan hasil
+print("Angka awal :", str(angka).replace(".", ","))
+print("Hasil konversi :", konversi_angka(angka));

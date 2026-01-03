@@ -1,0 +1,29 @@
+from utils import parse_nilai, hitung_rata_rata
+
+# Input jumlah siswa
+jumlah_siswa = int(input("Ada berapa siswa: "))
+
+# Input nilai (dipisahkan koma)
+data_nilai1 = input("Nilai1: ")
+data_nilai2 = input("Nilai2: ")
+data_nilai3 = input("Nilai3: ")
+
+# Proses data
+nilai1 = parse_nilai(data_nilai1)
+nilai2 = parse_nilai(data_nilai2)
+nilai3 = parse_nilai(data_nilai3)
+
+# Hitung rata-rata
+rata1 = hitung_rata_rata(nilai1)
+rata2 = hitung_rata_rata(nilai2)
+rata3 = hitung_rata_rata(nilai3)
+
+# Output sesuai format
+print("\n=== HASIL ===")
+print("Ada berapa siswa:", jumlah_siswa)
+print("Nilai1:", ", ".join(map(str, nilai1)))
+print("Nilai2:", ", ".join(map(str, nilai2)))
+print("Nilai3:", ", ".join(map(str, nilai3)))
+print("Rata-rata Nilai1:", round(rata1, 2))
+print("Rata-rata Nilai2:", round(rata2, 2))
+print("Rata-rata Nilai3:", round(rata3, 2))
